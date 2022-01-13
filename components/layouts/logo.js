@@ -32,7 +32,7 @@ const Logo = () => {
                         fontWeight="bold"
                         ml={3}
                     >
-                        Huitzitzili Domingo
+                        {`< / Huitzitzili Domingo >`}
                     </Text>
                 </LogoBox>
             </a>
