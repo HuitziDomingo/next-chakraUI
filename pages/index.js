@@ -20,11 +20,11 @@ const Page = () => {
                     mb={6}
                     align="center"
                 >
-                    Hola soy un programador WEB MERN STACK con residencia en CDMX.
+                    Hola soy un programador WEB MERN STACK con residencia en CDMX ( Maestro aveces discipulo siempre )
                 </Box>
                 <Box display={{ md: 'flex' }}>
                     <Box flexGrow={1}>
-                        <Heading as="h2" variant="page-title">Huitzitzili programador aveces discipulo siempre.</Heading>
+                        <Heading as="h2" variant="page-title">Huitzitzili Domingo</Heading>
                         <p>( Diseñador web / Diseñador movil / Programacion y bases de datos con Express y MongoDB )</p>
                     </Box>
                     <Box flexShrink={0} mt={{ base: 4, md: 0 }} ml={{ md: 6, }} align="center">
@@ -42,7 +42,7 @@ const Page = () => {
                     </Box>
                 </Box>
                 <Section delay={.1}>
-                    <Heading as="h3" variant="section=title" mt={6}>Acerca de mi.</Heading>
+                    <Heading as="h3" variant="section-title" mt={6} mb={3}>Acerca de mi.</Heading>
                     <Paragraph>
                         Soy un desarrollador web, que se a disciplinado en el area frontend desde hace mas de 5 años.
                         Mi participacion en el desarrollo web a sido ferviente desde que cree junto con unos amigos una
@@ -52,12 +52,12 @@ const Page = () => {
                     </Paragraph>
                     <Box align="center" my={4}>
                         <NextLink href="/works">
-                            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">Mi portafolio</Button>
+                            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">Mis trabajos y proyectos</Button>
                         </NextLink>
                     </Box>
                 </Section>
                 <Section delay={.3}>
-                    <Heading as="h3" variant="section-tilte">
+                    <Heading as="h3" variant="section-title" mb={3}>
                         Biografía
                     </Heading>
                     <BioSection>
