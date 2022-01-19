@@ -2,6 +2,7 @@ import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
+import youtube from '../public/img/youtube.png'
 
 
 const Posts = () => {
@@ -9,13 +10,11 @@ const Posts = () => {
         <Layout title="Posts">
             <Container>
                 <Heading as="h4" fontSize={20} mb={4}>
-                    Popular Post
+                    Curso de React Native.
                 </Heading>
                 <Section delay={.1}>
                     <SimpleGrid columns={[1, 2, 2]} gap={6}>
-                        <GridItem>
-
-                        </GridItem>
+                        <GridItem title="Mi canal de youtube" thumbnail={youtube} href="https://www.youtube.com/watch?v=ftxucvCPvys" />
                     </SimpleGrid>
                 </Section>
             </Container>

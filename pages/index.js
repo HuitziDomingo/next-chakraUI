@@ -1,5 +1,5 @@
 import NextLink from 'next/link'
-import { Container, Box, Heading, Image, useColorModeValue, Link, Button } from '@chakra-ui/react'
+import { Container, Box, Heading, Image, useColorModeValue, Link, Button, SimpleGrid, List, ListItem, Icon } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 
 import Layout from '../components/layouts/article'
@@ -7,6 +7,8 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
+import { GridItem } from '../components/grid-item'
+import { IoLogoLinkedin, IoLogoGithub, IoLogoDiscord, IoLogoYoutube } from 'react-icons/io5'
 
 const Page = () => {
     return (
@@ -83,6 +85,33 @@ const Page = () => {
                         Backend Developer en Anemona
                         Colaboracion para un aplicaciones de mapas usando como lenguajes principales PHP y Java Script, asicomo algunos frameorks, tales como jQuery y Bootstrap.
                     </BioSection>
+                </Section>
+                <Section delay={.4}>
+                    <Heading as="h3" variant="section-title" mb={6}>
+                        Yo en la web.
+                    </Heading>
+                    <List>
+                        <ListItem>
+                            <Link href='https://github.com/HuitziDomingo' target="_blank">
+                                <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoGithub} />}>@HuitziDomingo</Button>
+                            </Link>
+                        </ListItem>
+                        <ListItem>
+                            <Link href='https://www.youtube.com/channel/UCujmxDXST1nMxdzIojyMD0g' target="_blank">
+                                <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoYoutube} />}>MexicanDevelopers</Button>
+                            </Link>
+                        </ListItem>
+                        <ListItem>
+                            <Link href='https://www.linkedin.com/in/huitzitzili-le%C3%B3n-nieves-0b32a953/' target="_blank">
+                                <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoLinkedin} />}>@HuitziDomingo</Button>
+                            </Link>
+                        </ListItem>
+                        <ListItem>
+                            <Link href='https://discord.com/channels/618867779541401600/619600143204745246' target="_blank">
+                                <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoDiscord} />}>Huitzitzili#5253</Button>
+                            </Link>
+                        </ListItem>
+                    </List>
                 </Section>
             </Container>
         </Layout>
