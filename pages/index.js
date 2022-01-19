@@ -7,7 +7,6 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
-import { GridItem } from '../components/grid-item'
 import { IoLogoLinkedin, IoLogoGithub, IoLogoDiscord, IoLogoYoutube } from 'react-icons/io5'
 
 const Page = () => {
