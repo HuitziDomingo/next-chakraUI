@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "next dev -H 0.0.0.0",
-    "build": "next buikd",
+    "build": "next build",
     "lint": "next lint"
   },
   "dependencies": {
