@@ -13,7 +13,7 @@ const NotFound = () => {
     return(
         <Container>
             <Heading as="h1">No Encontrado</Heading>
-            <Text>La pagina que has estado buscando no se encuentra disponible :'C</Text>
+            <Text>La pagina que has estado buscando no se encuentra disponible :C</Text>
             <Divider my={6}/>
             <Box my={6}>
                 <NextLink href="/">
