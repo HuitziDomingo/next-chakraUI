@@ -1,8 +1,9 @@
 import { ChakraProvider } from "@chakra-ui/react"
 
+import theme from '../libs/theme'
+
 import Layout from '../components/main'
 import Fonts from '../components/fonts'
-import theme from '../libs/theme'
 
 import { AnimatePresence } from "framer-motion"
 
