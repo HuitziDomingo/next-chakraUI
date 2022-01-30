@@ -128,7 +128,6 @@ const VoxelDog = () => {
         w={[280, 480, 640]}
         h={[280, 480, 640]}
         position="relative"
-        zIndex={-10}
     >
         {loading && (
             <Spinner
