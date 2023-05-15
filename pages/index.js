@@ -84,6 +84,12 @@ const Page = () => {
                         Backend Developer en Anemona
                         Colaboracion para un aplicaciones de mapas usando como lenguajes principales PHP y Java Script, asicomo algunos frameorks, tales como jQuery y Bootstrap.
                     </BioSection>
+                    <BioSection>
+                        <BioYear>2021-Nov</BioYear>
+                        Frontend Developer en Black Trust
+                        Desarrollo de Aplicacion web con tecnologias como: React, Firebase, Material UI, SASS.
+                        Y micro servicios con Express.JS.
+                    </BioSection>
                 </Section>
                 <Section delay={.4}>
                     <Heading as="h3" variant="section-title" mb={6}>
@@ -101,7 +107,7 @@ const Page = () => {
                             </Link>
                         </ListItem>
                         <ListItem>
-                            <Link href='https://www.linkedin.com/in/huitzitzili-le%C3%B3n-nieves-0b32a953/' target="_blank">
+                            <Link href='https://www.linkedin.com/in/huitzitzili-domingo-le%C3%B3n-nieves-0b32a953/' target="_blank">
                                 <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoLinkedin} />}>@HuitziDomingo</Button>
                             </Link>
                         </ListItem>
