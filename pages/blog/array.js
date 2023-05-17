@@ -1,20 +1,12 @@
 import { Container, List, ListItem } from "@chakra-ui/react"
-import {  WorkImage, Meta } from '../../components/work'
+import { WorkImage, Meta } from '../../components/work'
 import P from '../../components/paragraph'
 import H1 from '../../components/title'
 import Layout from '../../components/layouts/article'
 
 import SyntaxHighlighter from 'react-syntax-highlighter'
+import { codePush } from '../../components/HighlighterCode'
 
-const codeString = `
- export function arrayPush() {
-    let fruits = ['manzana', 'platano', 'mango', 'durazno']
-    fruits.push('papaya')
-
-    fruits.map(fruit => console.log(fruit))
-    //'manzana', 'platano', 'mango', 'durazno','papaya'
-}
-`
 
 function array() {
   return (
@@ -42,7 +34,7 @@ function array() {
           </ListItem>
         </List>
         <SyntaxHighlighter language="javascript">
-          {codeString}
+          {codePush}
         </SyntaxHighlighter>
       </Container>
     </Layout>
