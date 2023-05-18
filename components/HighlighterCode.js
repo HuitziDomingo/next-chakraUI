@@ -34,3 +34,11 @@ export function arrayFilter() {
     //mango, durazno
 }
 `
+export const codeShift = `
+export function arrayShift() { 
+    let fruits = ['manzana', 'platano', 'mango', 'durazno']
+    let firstFruit = fruits.shift()
+    console.log(firstFruit)
+    //manzana
+}
+`

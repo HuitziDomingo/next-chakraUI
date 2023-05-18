@@ -10,7 +10,7 @@ import H1 from '../../components/title'
 import FooterAuthor from '../../components/footer-blog-bio'
 
 import SyntaxHighlighter from 'react-syntax-highlighter'
-import { codePush, codeConcat, codePop, codeFilter } from '../../components/HighlighterCode'
+import { codePush, codeConcat, codePop, codeFilter, codeShift } from '../../components/HighlighterCode'
 
 
 function array() {
@@ -93,6 +93,21 @@ function array() {
 
       <SyntaxHighlighter language="javascript">
         {codeFilter}
+      </SyntaxHighlighter>
+      
+      <Container>
+        <List ml={4} my={4}>
+          <ListItem>
+            <Text>Metodo  <Badge colorScheme='purple'>.shift( )</Badge></Text>
+            <Text>
+              Remueve el primer elemento de un arreglo y retorna el elemento removido.
+            </Text>
+          </ListItem>
+        </List>
+      </Container>
+
+      <SyntaxHighlighter language="javascript">
+        {codeShift}
       </SyntaxHighlighter>
 
       {/* Footer de la pagina */}
