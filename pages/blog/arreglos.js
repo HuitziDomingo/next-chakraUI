@@ -1,6 +1,6 @@
 import Head from "next/head"
 
-import { Container, List, ListItem, Badge, Text } from "@chakra-ui/react"
+import { Container } from "@chakra-ui/react"
 
 import Layout from '../../components/layouts/article'
 import { WorkImage } from '../../components/work'
@@ -8,6 +8,7 @@ import { WorkImage } from '../../components/work'
 import P from '../../components/paragraph'
 import H1 from '../../components/title'
 import FooterAuthor from '../../components/footer-blog-bio'
+import ArticleArray from '../../components/layouts/article-array'
 
 import SyntaxHighlighter from 'react-syntax-highlighter'
 import { codePush, codeConcat, codePop, codeFilter, codeShift } from '../../components/HighlighterCode'
@@ -32,83 +33,40 @@ function array() {
           En este Post rebisaremos varios de sus metodos de uso, sin mas
           introduccion empecemos.
         </P>
-        <List ml={4} my={4}>
-          <ListItem>
-            <Text>Metodo  <Badge colorScheme='purple'>.push( )</Badge></Text>
-            <Text>
-              Agrega un nuevo elemento al final del arreglo y retorna una nueva longitud en el mismo.
-            </Text>
-          </ListItem>
-        </List>
       </Container>
 
+      <ArticleArray
+        method='.push( )'
+        content='Agrega un nuevo elemento al final del arreglo y retorna una nueva longitud en el mismo.'
+        codeFilter={codePush}
+      />
 
-      <SyntaxHighlighter language="javascript">
-        {codePush}
-      </SyntaxHighlighter>
+      <ArticleArray
+        method='.concat( )'
+        content='Concatena 2 o mas arreglos y devuelve un nuevo arreglo con los valores
+              concatenados.'
+        codeFilter={codeConcat}
+      />
 
-      <Container>
-        <List ml={4} my={4}>
-          <ListItem>
-            <Text>Metodo  <Badge colorScheme='purple'>.concat( )</Badge></Text>
-            <Text>
-              Concatena 2 o mas arreglos y devuelve un nuevo arreglo con los valores
-              concatenados.
-            </Text>
-          </ListItem>
-        </List>
-      </Container>
+      <ArticleArray
+        method='.pop( )'
+        content='Remueve el ultimo elemento de un arreglo.'
+        codeFilter={codePop}
+      />
 
-      <SyntaxHighlighter language="javascript">
-        {codeConcat}
-      </SyntaxHighlighter>
-
-      <Container>
-        <List ml={4} my={4}>
-          <ListItem>
-            <Text>Metodo  <Badge colorScheme='purple'>.pop( )</Badge></Text>
-            <Text>
-              Remueve el ultimo elemento de un arreglo.
-            </Text>
-          </ListItem>
-        </List>
-      </Container>
-
-      <SyntaxHighlighter language="javascript">
-        {codePop}
-      </SyntaxHighlighter>
-
-      <Container>
-        <List ml={4} my={4}>
-          <ListItem>
-            <Text>Metodo  <Badge colorScheme='purple'>.filter( )</Badge></Text>
-            <Text>
-              Crea un nuevo arreglo filtrando los datos segun la condicion
+      <ArticleArray
+        method='.filter( )'
+        content='Crea un nuevo arreglo filtrando los datos segun la condicion;
               en su version mas profesional este metodo llega a tener hasta 3
-              argumentos.
-            </Text>
-          </ListItem>
-        </List>
-      </Container>
+              argumentos.'
+        codeFilter={codeFilter}
+      />
 
-      <SyntaxHighlighter language="javascript">
-        {codeFilter}
-      </SyntaxHighlighter>
-      
-      <Container>
-        <List ml={4} my={4}>
-          <ListItem>
-            <Text>Metodo  <Badge colorScheme='purple'>.shift( )</Badge></Text>
-            <Text>
-              Remueve el primer elemento de un arreglo y retorna el elemento removido.
-            </Text>
-          </ListItem>
-        </List>
-      </Container>
-
-      <SyntaxHighlighter language="javascript">
-        {codeShift}
-      </SyntaxHighlighter>
+      <ArticleArray
+        method='.shift( )'
+        content='Remueve el primer elemento de un arreglo y retorna el elemento removido.'
+        codeFilter={codeShift}
+      />
 
       {/* Footer de la pagina */}
       <FooterAuthor />
