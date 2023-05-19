@@ -1,4 +1,6 @@
-export const codePush = `
+export class HighlighterCode {
+
+    static codePush = `
  export function arrayPush() {
     let fruits = ['manzana', 'platano', 'mango', 'durazno']
     fruits.push('papaya')
@@ -7,7 +9,7 @@ export const codePush = `
     //manzana, platano, mango, durazno, papaya
 }
 `
-export const codeConcat = `
+    static codeConcat = `
 export function arrayConcat() {
     let fruits = ['manzana', 'platano', 'mango', 'durazno']
     let vegetables = ['verengena', 'calabaza', 'zanahoria', 'lechuga']
@@ -18,7 +20,7 @@ export function arrayConcat() {
     //manzana, platano, mango, durazno, verengena, calabaza, zanahoria, lechuga
 }
 `
-export const codePop = `
+    static codePop = `
 export function arrayPop() {
     let fruits = ['manzana', 'platano', 'mango', 'durazno']
     fruits.pop()
@@ -26,7 +28,7 @@ export function arrayPop() {
     //manzana, platano, mango
 }
 `
-export const codeFilter = `
+    static codeFilter = `
 export function arrayFilter() {
     let fruits = ['manzana', 'platano', 'mango', 'durazno']
     let newFruits = fruits.filter(fruit => fruit !== 'manzana' && fruit !== 'platano')
@@ -34,7 +36,7 @@ export function arrayFilter() {
     //mango, durazno
 }
 `
-export const codeShift = `
+    static codeShift = `
 export function arrayShift() { 
     let fruits = ['manzana', 'platano', 'mango', 'durazno']
     let firstFruit = fruits.shift()
@@ -42,3 +44,16 @@ export function arrayShift() {
     //manzana
 }
 `
+
+    static codeUnShift = `
+export function arrayUnShift() { 
+    let numbers = [40, 50, 60, 70, 80]
+    let addNumbersToStart = numbers.unshift(10, 20, 30)
+    console.log(addNumbersToStart) // <- 8
+    numbers.map(nums => console.log(nums)) // <- 10, 20, 30, 40, 50, 60, 70, 80
+}
+`
+
+}
+
+

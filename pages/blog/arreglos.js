@@ -10,7 +10,7 @@ import H1 from '../../components/title'
 import FooterAuthor from '../../components/footer-blog-bio'
 import ArticleArray from '../../components/layouts/article-array'
 
-import { codePush, codeConcat, codePop, codeFilter, codeShift } from '../../components/HighlighterCode'
+import { HighlighterCode } from '../../components/HighlighterCode'
 
 
 function array() {
@@ -37,20 +37,20 @@ function array() {
       <ArticleArray
         method='.push( )'
         content='Agrega un nuevo elemento al final del arreglo y retorna una nueva longitud en el mismo.'
-        codeFilter={codePush}
+        codeFilter={HighlighterCode.codePush}
       />
 
       <ArticleArray
         method='.concat( )'
         content='Concatena 2 o mas arreglos y devuelve un nuevo arreglo con los valores
               concatenados.'
-        codeFilter={codeConcat}
+        codeFilter={HighlighterCode.codeConcat}
       />
 
       <ArticleArray
         method='.pop( )'
         content='Remueve el ultimo elemento de un arreglo.'
-        codeFilter={codePop}
+        codeFilter={HighlighterCode.codePop}
       />
 
       <ArticleArray
@@ -58,13 +58,19 @@ function array() {
         content='Crea un nuevo arreglo filtrando los datos segun la condicion;
               en su version mas profesional este metodo llega a tener hasta 3
               argumentos.'
-        codeFilter={codeFilter}
+        codeFilter={HighlighterCode.codeFilter}
       />
 
       <ArticleArray
         method='.shift( )'
         content='Remueve el primer elemento de un arreglo y retorna el elemento removido.'
-        codeFilter={codeShift}
+        codeFilter={HighlighterCode.codeShift}
+      />
+
+      <ArticleArray
+        method='.unshift( )'
+        content='Agrega elementos nuevos al inicio de un arreglo.'
+        codeFilter={HighlighterCode.codeUnShift}
       />
 
       {/* Footer de la pagina */}

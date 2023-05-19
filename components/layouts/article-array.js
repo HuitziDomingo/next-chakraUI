@@ -3,7 +3,7 @@ import SyntaxHighlighter from 'react-syntax-highlighter'
 
 function ArticleArray({ codeFilter, method, content }) {
     return (
-        <div>
+        <>
             <Container>
                 <List ml={4} my={4}>
                     <ListItem>
@@ -18,7 +18,7 @@ function ArticleArray({ codeFilter, method, content }) {
             <SyntaxHighlighter language="javascript">
                 {codeFilter}
             </SyntaxHighlighter>
-        </div>
+        </>
     )
 }
 
