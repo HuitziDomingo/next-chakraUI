@@ -10,7 +10,6 @@ import H1 from '../../components/title'
 import FooterAuthor from '../../components/footer-blog-bio'
 import ArticleArray from '../../components/layouts/article-array'
 
-import SyntaxHighlighter from 'react-syntax-highlighter'
 import { codePush, codeConcat, codePop, codeFilter, codeShift } from '../../components/HighlighterCode'
 
 
