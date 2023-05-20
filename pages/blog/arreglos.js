@@ -20,19 +20,18 @@ function array() {
         <title>Arreglos</title>
       </Head>
       <WorkImage src="/img/arreglosPortada.png" alt="Debred" />
-      <Container>
-        <H1>Metodos de Array.</H1>
-        <P style={{ marginBottom: 20 }}>
-          Si eres un programador Backend o Frontend en JavaScript o
-          Typescript.
-          Es muy usual trabajar con arreglos; y aqui te invito a conocer algunos de
-          sus metodos para que puedas manipularlos.
-        </P>
-        <P>
-          En este Post rebisaremos varios de sus metodos de uso, sin mas
-          introduccion empecemos.
-        </P>
-      </Container>
+
+      <H1>Metodos de Array.</H1>
+      <P style={{ marginBottom: 20 }}>
+        Si eres un programador Backend o Frontend en JavaScript o
+        Typescript.
+        Es muy usual trabajar con arreglos; y aqui te invito a conocer algunos de
+        sus metodos para que puedas manipularlos.
+      </P>
+      <P style={{ marginBottom: 60 }}>
+        En este Post rebisaremos varios de sus metodos de uso, sin mas
+        introduccion empecemos.
+      </P>
 
       <ArticleArray
         method='.push( )'
@@ -72,6 +71,47 @@ function array() {
         content='Agrega elementos nuevos al inicio de un arreglo.'
         codeFilter={HighlighterCode.codeUnShift}
       />
+
+      <ArticleArray
+        method='.map( )'
+        content='Nos ayuda a recorrer arreglos, e incluso arreglos con objetos;
+        accediendo directamente a sus propiedades del mismo.'
+        codeFilter={HighlighterCode.codeMap}
+      />
+
+      <ArticleArray
+        method='.slice( )'
+        content='Nos retorna los elementos seleccionados, especificamente.'
+        codeFilter={HighlighterCode.codeSlice}
+      />
+
+      <ArticleArray
+        method='.sort( )'
+        content='Acomoda el contenido del arreglo de mayor a menor o dicho de 
+        otra manera, de forma ascendente.
+        '
+        codeFilter={HighlighterCode.codeSort}
+      />
+
+      <ArticleArray
+        method='.join( )'
+        content='Une el contenido del arreglo en un string separandolo por un 
+        separador especifico.'
+        codeFilter={HighlighterCode.codeJoin}
+      />
+
+      <ArticleArray
+        method='.toString( )'
+        content='Convierte todo nuestro arreglo en una cadena de texto (string).'
+        codeFilter={HighlighterCode.codeToString}
+      />
+
+      {/* Despidida del post */}
+      <P style={{ marginTop: 60 }}>
+        Como podemos observar son bastantes los metodos que utilizan los arrays,
+        y es probable que con el tiempo existan mas y mejores, me entusisasma ver
+        lo que nos depara el futuro.
+      </P>
 
       {/* Footer de la pagina */}
       <FooterAuthor />
