@@ -1,6 +1,5 @@
 import Head from "next/head"
 
-import Layout from '../../components/layouts/article'
 import { WorkImage } from '../../components/work'
 
 import P from '../../components/paragraph'
@@ -13,7 +12,7 @@ import { HighlighterCode } from '../../components/HighlighterCode'
 
 function array() {
   return (
-    <Layout>
+    <>
       <Head>
         <title>Arreglos</title>
       </Head>
@@ -114,7 +113,7 @@ function array() {
       {/* Footer de la pagina */}
       <FooterAuthor />
 
-    </Layout>
+    </>
   )
 }
 

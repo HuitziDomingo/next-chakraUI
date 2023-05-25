@@ -15,7 +15,7 @@ function ArticleArray({ codeFilter, method, content }) {
                 </List>
             </Container>
 
-            <SyntaxHighlighter language="javascript">
+            <SyntaxHighlighter language="typescript">
                 {codeFilter}
             </SyntaxHighlighter>
         </>
