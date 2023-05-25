@@ -17,6 +17,7 @@ const Posts = () => {
                     <SimpleGrid columns={[1, 2, 2]} gap={6}>
                         <GridItem title="Mi canal de youtube" thumbnail={youtube} href="https://www.youtube.com/watch?v=ftxucvCPvys" />
                         <GridItem title="Arreglos en JavaScript" thumbnail={ArrayPage} href="/blog/arreglos" />
+                        <GridItem title="Configurando un Backend con Express, MongoDB, Typescript y Docker." thumbnail={ArrayPage} href="/blog/backend-api" />
                     </SimpleGrid>
                 </Section>
             </Container>
