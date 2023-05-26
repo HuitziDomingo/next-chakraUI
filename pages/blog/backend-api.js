@@ -21,7 +21,7 @@ function Backend() {
       <H1>Configurando un Backend con Express, MongoDB, Typescript y Docker.</H1>
       <P style={{ marginBottom: 20 }}>
         Hola amigo este tutorial es para que puedas aprender a configurar tu
-        backend con las tecnoligias del STACK MERN.
+        backend con las tecnologias del STACK MERN.
       </P>
       <P style={{ marginBottom: 60 }}>
         En mi caso siempre prefiero usar Typescript como lenguaje de Backend y
@@ -51,7 +51,7 @@ function Backend() {
       <ArticleExpressTs
         title={'Scripts de arranque.'}
         content={`Ahora agregaremos los siquientes scripts para configurar nuestro
-        archivo packege,json, esto sirve para desarrollar y compilar nuestro backend`}
+        archivo package.json, esto sirve para desarrollar y compilar nuestro backend`}
         codeFilter={HighlighterCode.codeDev}
       />
 
@@ -67,9 +67,10 @@ function Backend() {
 
       <Container>
         <P style={{ textIndent: '0em' }}>
-          Ahora vamos a instalar las <Badge>devDependencies</Badge> y los <Badge>@types</Badge>.
-          A su vez, instalaremos los modulos de <Badge>ts-node-dev</Badge> y
-          <Badge> typescript</Badge>.
+          Ahora vamos a instalar las <Badge style={{ textTransform: 'inherit' }}>devDependencies</Badge> y los 
+          <Badge style={{ textTransform: 'inherit' }}>@types</Badge>.
+          A su vez, instalaremos los modulos de <Badge style={{ textTransform: 'inherit' }}>ts-node-dev</Badge> y
+          <Badge style={{ textTransform: 'inherit' }}> typescript</Badge>.
         </P>
       </Container>
 
@@ -79,8 +80,8 @@ function Backend() {
 
       <Container>
         <P style={{ textIndent: '0em' }}>
-          Por ultimo vamos a instalar el archivo de <Badge>tsconfig.json</Badge>.
-          Existen dos formas. Una es usando <Badge>npx</Badge> en caso de no tener
+          Por ultimo vamos a instalar el archivo de <Badge style={{ textTransform: 'inherit' }}>tsconfig.json</Badge>.
+          Existen dos formas. Una es usando <Badge style={{ textTransform: 'inherit' }}>npx</Badge> en caso de no tener
           tsc instalado y la otra es usar el comando de la siguiente manera.
         </P>
       </Container>
@@ -115,7 +116,7 @@ function Backend() {
       <ArticleExpressTs
         title={'Configurando Directorios'}
         content={`
-        Crearemos una carpeta 'src' y dentro crearemos dos archivos 'app.ts' y index.ts.
+        Crearemos una carpeta 'src' y dentro crearemos dos archivos 'app.ts' y 'index.ts'.
         Algo asi se debe ver nuestro explorador de archivos.
         `}
       />
