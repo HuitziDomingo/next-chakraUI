@@ -8,7 +8,7 @@ function Aum() {
     return (
         <Layout>
             <Container>
-                <Title>Debred <Badge>2019</Badge> </Title>
+                <Title>AUM <Badge>2019</Badge> </Title>
                 <P>
                     Un sitio web informativo de una asociacion espiritual y filosofica, basada en vegeterianismo
                     y cultura.
@@ -23,9 +23,9 @@ function Aum() {
                     </ListItem>
                 </List>
             </Container>
-            <WorkImage src="/img/debred.png" alt="Debred" />
+            <WorkImage src="/img/aum.png" alt="AUM" />
             <Container>
-                <Title>Debred <Badge>2019</Badge> </Title>
+                <Title>AUM <Badge>2019</Badge> </Title>
                 <P>Colaboro como programador frontend de forma Freelance.</P>
                 <List ml={4} my={4}>
                     <ListItem>
@@ -36,7 +36,7 @@ function Aum() {
                     </ListItem>
                 </List>
             </Container>
-            <WorkImage src="/img/familiaDebred.jpg" alt="familia Debred" />
+            <WorkImage src="/img/aum.png" />
         </Layout>
     )
 }

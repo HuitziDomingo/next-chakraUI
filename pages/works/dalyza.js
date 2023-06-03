@@ -8,7 +8,7 @@ function Dalyza() {
     return (
         <Layout>
             <Container>
-                <Title>Debred <Badge>2016</Badge> </Title>
+                <Title>Dalyza <Badge>2016</Badge> </Title>
                 <P>
                     Un sitio web con su landing page, para vender servicios de labado de alfombras, venta de percianas y pisos
                     entre otras cosas del nicho.
@@ -23,10 +23,10 @@ function Dalyza() {
                     </ListItem>
                 </List>
             </Container>
-            <WorkImage src="/img/debred.png" alt="Debred" />
+            <WorkImage src="/img/dalyza.png" alt="Dalyza" />
             <Container>
-                <Title>Debred <Badge>2014</Badge> </Title>
-                <P>Colaboro como programador frontend de forma Freelance.</P>
+                <Title>Dalyza <Badge>2016</Badge> </Title>
+                <P>Colaboracion como programador frontend de forma Freelance.</P>
                 <List ml={4} my={4}>
                     <ListItem>
                         <Meta>Website</Meta>
@@ -36,7 +36,7 @@ function Dalyza() {
                     </ListItem>
                 </List>
             </Container>
-            <WorkImage src="/img/familiaDebred.jpg" alt="familia Debred" />
+            <WorkImage src="/img/dalyza.png"  />
         </Layout>
     )
 }
