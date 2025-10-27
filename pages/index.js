@@ -90,6 +90,12 @@ const Page = () => {
                         Desarrollo de Aplicacion web con tecnologias como: React, Firebase, Material UI, SASS.
                         Y micro servicios con Express.JS.
                     </BioSection>
+                    <BioSection>
+                        <BioYear>2023-Jun</BioYear>
+                        Frontend Developer and Tech Lead  en Tata Consultancy Services
+                        Desarrollo de Aplicacion web de Software Bancario, uso de Angular, CI/CD, dominio de Typescript asi como Patrones de Arquitectura.
+                        Apoyo al equipo de desarrollo tanto en Frontend y Backend.
+                    </BioSection>
                 </Section>
                 <Section delay={.4}>
                     <Heading as="h3" variant="section-title" mb={6}>
