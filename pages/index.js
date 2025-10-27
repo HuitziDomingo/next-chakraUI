@@ -21,12 +21,13 @@ const Page = () => {
                     mb={6}
                     align="center"
                 >
-                    Hola soy un programador WEB MERN STACK con residencia en CDMX ( Maestro aveces discipulo siempre )
+                    Hola soy Leon, desarrollador NodeJS con residencia en CDMX ( Maestro aveces discipulo siempre )
                 </Box>
                 <Box display={{ md: 'flex' }}>
                     <Box flexGrow={1}>
-                        <Heading as="h2" variant="page-title">Huitzitzili Domingo</Heading>
-                        <p>( Diseñador web / Diseñador movil / Programacion y bases de datos con Express y MongoDB )</p>
+                        <Heading as="h2" variant="page-title">Huitzitzili Domingo Leon Nieves.</Heading>
+                        <p> {`<Actualmente buscando oportunidades como Tech Lead
+                            para construir equipos y productos de alto impacto.>`} </p>
                     </Box>
                     <Box flexShrink={0} mt={{ base: 4, md: 0 }} ml={{ md: 6, }} align="center">
                         <Image
@@ -45,11 +46,15 @@ const Page = () => {
                 <Section delay={.1}>
                     <Heading as="h3" variant="section-title" mt={6} mb={3}>Acerca de mi.</Heading>
                     <Paragraph>
-                        Soy un desarrollador web, que se a disciplinado en el area frontend desde hace mas de 5 años.
-                        Mi participacion en el desarrollo web a sido ferviente desde que cree junto con unos amigos una
-                        pequeña agencia de desarrollo freelance llamada {' '}
-                        <Link href="https://www.debred.com">Debred</Link>
-                        .
+                        Soy desarrollador Full-Stack con más de 5 años de experiencia, especializado en Node.js.
+                        Mi trayectoria incluye liderazgo técnico y un enfoque apasionado tanto en frontend como backend.
+
+                        Mi experiencia más significativa fue co-fundar y desarrollar {' '}
+                        <Link href="https://www.debred.com">Debred</Link>, una agencia freelance donde
+                        coordiné proyectos de extremo a extremo.
+
+                        Aunque disfruto el desarrollo móvil, mi verdadera pasión es el liderazgo técnico:
+                        guiar equipos, tomar decisiones de arquitectura y crear soluciones escalables.
                     </Paragraph>
                     <Box align="center" my={4}>
                         <NextLink href="/works">
@@ -95,6 +100,7 @@ const Page = () => {
                         Frontend Developer and Tech Lead  en Tata Consultancy Services
                         Desarrollo de Aplicacion web de Software Bancario, uso de Angular, CI/CD, dominio de Typescript asi como Patrones de Arquitectura.
                         Apoyo al equipo de desarrollo tanto en Frontend y Backend.
+                        Capacitacion a colaboradores en la empresa en el desarrollo de Software avanzado.
                     </BioSection>
                 </Section>
                 <Section delay={.4}>
